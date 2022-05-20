@@ -5,7 +5,7 @@
 ```{r }
 devtools::build(
   pkg = here::here(),
-  path = here::here("../Output/DataTidyACSSoma"),
+  path = here::here("../Output/OutputDataTidyACSSoma"),
   binary = FALSE
 )
 ```
