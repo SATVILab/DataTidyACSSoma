@@ -1,4 +1,4 @@
-#' @name soma_data_tidy
+#' @name data_tidy_soma
 #' @docType data
 #' @title The SOMAScan plasma proteomics data set for the ACS cohort.
 #' @details
@@ -31,4 +31,4 @@
 #' @source The data comes from ???.
 #' @seealso
 #' \link{TuberculomicsCompendium}
-#' NULL
+NULL
