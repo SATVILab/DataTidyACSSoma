@@ -5,7 +5,6 @@ author: Miguel Rodo
 
 ```{r , include = FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-setwd(here::here())
 ```
   
 Save `data_tidy_soma.rds` from `TuberculomicsCompendium` if it is not available. This is the full ACS SOMALogic data set for the ACS, including all variables.
