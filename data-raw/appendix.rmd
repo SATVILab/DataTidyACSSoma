@@ -1,0 +1,11 @@
+# Appendix
+
+## Build package tarball
+
+```{r }
+devtools::build(
+  pkg = here::here(),
+  path = here::here("../Output/DataTidyACSSoma"),
+  binary = FALSE
+)
+```
