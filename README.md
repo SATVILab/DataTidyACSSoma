@@ -1,4 +1,4 @@
-# DataTidyACSSoma
+# DataTidyACSClinical
 
 The goal of `DataTidyACSSoma` is to provide easy, documented access to the ACS SOMALogic dataset.
 
