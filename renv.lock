@@ -9,9 +9,17 @@
     ]
   },
   "Bioconductor": {
-    "Version": null
+    "Version": "3.14"
   },
   "Packages": {
+    "BiocManager": {
+      "Package": "BiocManager",
+      "Version": "1.30.18",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Hash": "b1a93bed5debda5775636086fdca017b",
+      "Requirements": []
+    },
     "R6": {
       "Package": "R6",
       "Version": "2.5.1",
