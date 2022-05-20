@@ -20,8 +20,9 @@ if (!file.exists(here::here("data/data_tidy_soma.rda"))) {
   if (!requireNamespace("TuberculomicsCompendium", quietly = TRUE)) {
     stop("Email Miguel Rodo at rdxmig002@myuct.ac.za for the TuberculomicsCompendium package")
   }
-  data_tidy_soma <- TuberculomicsCompendium::soma_data_tidy
-  usethis::use_data(data_tidy_soma)
+  data_tidy_soma <- TuberculomicsCompendium::soma_data_tidy |>
+    tibble::as_tibble()
+  usethis::use_data(data_tidy_soma, overwrite = TRUE)
   if (!requireNamespace("readr", quietly = TRUE)) {
     utils::install.packages("readr", quiet = TRUE)
   }
