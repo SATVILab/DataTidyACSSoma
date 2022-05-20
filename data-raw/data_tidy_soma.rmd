@@ -1,0 +1,37 @@
+---
+title: Save ACS Soma data
+author: Miguel Rodo
+---
+
+```{r , include = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+setwd(here::here())
+```
+  
+Save `data_tidy_soma.rds` from `TuberculomicsCompendium` if it is not available. This is the full ACS SOMALogic data set for the ACS, including all variables.
+
+```{r }
+dir_output <- here::here("../Output/OutputDataTidyACSSoma")
+if (!requireNamespace("usethis", quietly = TRUE)) {
+  utils::install.packages("usethis", quiet = TRUE)
+}
+if (!dir.exists(dir_output)) dir.create(dir_output, recursive = TRUE)
+if (!file.exists(here::here("data/data_tidy_soma.rda"))) {
+  if (!requireNamespace("TuberculomicsCompendium", quietly = TRUE)) {
+    stop("Email Miguel Rodo at rdxmig002@myuct.ac.za for the TuberculomicsCompendium package")
+  }
+  data_tidy_soma <- TuberculomicsCompendium::soma_data_tidy
+  usethis::use_data(data_tidy_soma)
+  if (!requireNamespace("readr", quietly = TRUE)) {
+    utils::install.packages("readr", quiet = TRUE)
+  }
+  readr::write_csv(
+    data_tidy_soma,
+    file = file.path(dir_output, "data_tidy_soma.csv")
+  )
+  invisible(file.copy(
+    from = "data/data_tidy_soma.rda",
+    to = file.path(dir_output, "data_tidy_soma.rda")
+  ))
+}
+```

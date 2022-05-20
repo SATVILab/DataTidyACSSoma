@@ -1,0 +1,34 @@
+#' @name soma_data_tidy
+#' @docType data
+#' @title The SOMAScan plasma proteomics data set for the ACS cohort.
+#' @details
+#' From the relevant manuscript:
+#' "Cryopreserved plasma samples collected from BD Vacutainer Cell Preparation Tubes
+#' with Sodium Heparin (BD Biosciences) were analysed by using SOMAscan Version 3+ 3000plex assay,
+#' a multiplexed modified DNA aptamer array that quantifies 3000 proteins at 3 different
+#' plasma dilutions, as reported previously."
+#'
+#' In the manuscript: "data from all samples were log2 transformed, normalized and calibrated
+#' using standard hybridization and calibration procedures." The relevant reference is:
+#'
+#' Scriba TJ, Penn-Nicholson A, Shankar S, Hraha T, Thompson EG, Sterling D, et al.
+#' Sequential inflammatory processes define human progression from M. tuberculosis infection to
+#' tuberculosis disease. PLoS Pathog. 2017;13: e1006687.
+#'
+#' @format a \code{tbl_df} containing the following fields:
+#' \describe{
+#' \item{ProteinID}{SomaMer / aptamer measured.}
+#' \item{Soma_Target}{Protein ID that has affinity for the aptamer / SomaMer.}
+#' \item{Soma_TargetFullName}{The name of the protein target.}
+#' \item{Soma_UniProt}{UniProt identifier for the protein.}
+#' \item{Soma_EntrezGeneID}{The Entrez Gene Id for the gene making the protein.}
+#' \item{Soma_EntrezGeneSymbol}{The Entrez Gene Symbol for the gene making the protein.}
+#' \item{SampleID}{This uniquely identifies a specific individual at a specific timepoint. The part before the underscore is the original participant ID, and the part afterwards specifies the visit type (day 180, day 360) at which it was collected.}
+#' \item{Soma_Readout}{The assay readout. Measurement is in relative fluorescence units (RFU).}
+#' \item{Soma_Matrix}{The sample type that was assayed. Here it's "Plasma".}
+#' \item{Soma_TransformedReadout}{The assay readout, transformed by the Box-Cox transform (y^lambda-1)/lambda with parameter lambda = -0.1818182}
+#' }
+#' @source The data comes from ???.
+#' @seealso
+#' \link{TuberculomicsCompendium}
+#' NULL
