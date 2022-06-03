@@ -15,20 +15,13 @@ remotes::install_github("SATVILab/DataTidyACSSoma")
 
 ## Data sets
 
-The following datasets are available:
-```{r , results = "asis", echo = FALSE}
-data_tbl <- tibble::tibble(
-  Dataset = c(
-    "data_tidy_soma"
-  ),
-  Description = c(
-    "Full ACS SOMALogic dataset"
-  )
-)
-pander::pandoc.table(data_tbl)
-```
+The following datasets is available:
 
-Use `?DataTidyACSSoma::<dataset_name>` to see documentation for each dataset.
+|Dataset        |Description                |
+|:--------------|:--------------------------|
+|data_tidy_soma |Full ACS SOMALogic dataset |
+
+Use `?DataTidyACSSoma::<dataset_name>` to see documentation for the dataset.
 
 ## Project structure
 
