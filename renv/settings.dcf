@@ -1,6 +1,7 @@
 bioconductor.version: 3.14
 external.libraries:
-ignored.packages:
+ignored.packages: 
+  - TuberculomicsCompendium
 package.dependency.fields: Imports, Depends, LinkingTo
 r.version:
 snapshot.type: implicit
