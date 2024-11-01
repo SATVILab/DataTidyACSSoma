@@ -1,6 +1,10 @@
 ^renv$
 ^renv\.lock$
-^ThesisRodo\.Rproj$
 ^\.Rproj\.user$
 ^inst
 ^_output$
+^\.devcontainer$
+^\.devcontainer/
+^repos-to-clone\.list$
+^\.Renviron$
+^EntireProject\.code-workspace$
