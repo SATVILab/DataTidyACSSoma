@@ -1,5 +1,5 @@
 {
-  "image": "bioconductor/bioconductor_docker:RELEASE_3_19",
+  "image": "bioconductor/bioconductor_docker:RELEASE_20",
 	"features": {
 		"ghcr.io/MiguelRodo/DevContainerFeatures/repos:1": {},
 		"ghcr.io/MiguelRodo/DevContainerFeatures/config-r:1": {},
